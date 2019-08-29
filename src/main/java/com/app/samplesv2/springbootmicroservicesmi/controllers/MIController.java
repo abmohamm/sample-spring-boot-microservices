@@ -8,12 +8,23 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.app.samplesv2.springbootmicroservicesmi.model.Movie;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class MIController.
+ */
 @RestController
 @RequestMapping("/movies")
 public class MIController {
 
+	/** The logger. */
 	Logger logger = Logger.getLogger(MIController.class.getName());
 	
+	/**
+	 * Gets the movie info.
+	 *
+	 * @param movieId the movie id
+	 * @return the movie info
+	 */
 	@RequestMapping("/{movieId}")
     public Movie getMovieInfo(@PathVariable("movieId") String movieId) {
 		
